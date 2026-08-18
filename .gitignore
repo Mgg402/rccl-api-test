@@ -1,0 +1,4 @@
+build/
+rccl_trace_output/
+*.so
+*.o

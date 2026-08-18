@@ -1,0 +1,138 @@
+rocprofiler-register loaded: /data/Runtime_dir/source/register/rocprofiler-register/Install_rel/lib/librocprofiler-register.so.0
+W0818 20:31:43.749127   67212 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.002037 sec
+W0818 20:31:43.750014   67212 simple_timer.cpp:55] [rocprofv3] './build/bin/rccl_api_test' ::     0.000000 sec
+Running main() from /data/mxg_rccltest/rccl_api_test/tools/googletest/googletest/src/gtest_main.cc
+[==========] Running 36 tests from 11 test suites.
+[----------] Global test environment set-up.
+[----------] 11 tests from RcclCommApiTest
+[ RUN      ] RcclCommApiTest.CommInitRankAndDestroy
+W0818 20:31:43.750220   67212 tool.cpp:3172] RCCL version 2.27.7 initialized (instance=0)
+W0818 20:31:43.768517   67212 tool.cpp:3172] HSA version 1.11.0 initialized (instance=0)
+[       OK ] RcclCommApiTest.CommInitRankAndDestroy (1981 ms)
+[ RUN      ] RcclCommApiTest.CommFinalize
+[       OK ] RcclCommApiTest.CommFinalize (41 ms)
+[ RUN      ] RcclCommApiTest.CommGetAsyncError
+[       OK ] RcclCommApiTest.CommGetAsyncError (41 ms)
+[ RUN      ] RcclCommApiTest.CommCount
+[       OK ] RcclCommApiTest.CommCount (41 ms)
+[ RUN      ] RcclCommApiTest.CommCuDevice
+[       OK ] RcclCommApiTest.CommCuDevice (40 ms)
+[ RUN      ] RcclCommApiTest.CommUserRank
+[       OK ] RcclCommApiTest.CommUserRank (40 ms)
+[ RUN      ] RcclCommApiTest.CommAbort
+[       OK ] RcclCommApiTest.CommAbort (1030 ms)
+[ RUN      ] RcclCommApiTest.CommInitAll
+[       OK ] RcclCommApiTest.CommInitAll (42 ms)
+[ RUN      ] RcclCommApiTest.CommInitRankConfig
+[       OK ] RcclCommApiTest.CommInitRankConfig (42 ms)
+[ RUN      ] RcclCommApiTest.CommRegisterDeregister
+[       OK ] RcclCommApiTest.CommRegisterDeregister (41 ms)
+[ RUN      ] RcclCommApiTest.CommSplit
+[       OK ] RcclCommApiTest.CommSplit (91 ms)
+[----------] 11 tests from RcclCommApiTest (3435 ms total)
+
+[----------] 1 test from RcclCommShrinkTest
+[ RUN      ] RcclCommShrinkTest.ShrinkInvalidArguments
+[       OK ] RcclCommShrinkTest.ShrinkInvalidArguments (41 ms)
+[----------] 1 test from RcclCommShrinkTest (41 ms total)
+
+[----------] 1 test from RcclCommWindowApiTest
+[ RUN      ] RcclCommWindowApiTest.WindowRegisterDeregister
+[       OK ] RcclCommWindowApiTest.WindowRegisterDeregister (42 ms)
+[----------] 1 test from RcclCommWindowApiTest (42 ms total)
+
+[----------] 1 test from RcclVersionTest
+[ RUN      ] RcclVersionTest.GetVersion
+RCCL version: 22707
+[       OK ] RcclVersionTest.GetVersion (0 ms)
+[----------] 1 test from RcclVersionTest (0 ms total)
+
+[----------] 11 tests from RcclCollectiveApiTest
+[ RUN      ] RcclCollectiveApiTest.AllReduce
+[       OK ] RcclCollectiveApiTest.AllReduce (41 ms)
+[ RUN      ] RcclCollectiveApiTest.AllGather
+[       OK ] RcclCollectiveApiTest.AllGather (40 ms)
+[ RUN      ] RcclCollectiveApiTest.Broadcast
+[       OK ] RcclCollectiveApiTest.Broadcast (41 ms)
+[ RUN      ] RcclCollectiveApiTest.Reduce
+[       OK ] RcclCollectiveApiTest.Reduce (40 ms)
+[ RUN      ] RcclCollectiveApiTest.ReduceScatter
+[       OK ] RcclCollectiveApiTest.ReduceScatter (40 ms)
+[ RUN      ] RcclCollectiveApiTest.Scatter
+[       OK ] RcclCollectiveApiTest.Scatter (40 ms)
+[ RUN      ] RcclCollectiveApiTest.Gather
+[       OK ] RcclCollectiveApiTest.Gather (42 ms)
+[ RUN      ] RcclCollectiveApiTest.AllToAll
+[       OK ] RcclCollectiveApiTest.AllToAll (40 ms)
+[ RUN      ] RcclCollectiveApiTest.AllToAllv
+[       OK ] RcclCollectiveApiTest.AllToAllv (39 ms)
+[ RUN      ] RcclCollectiveApiTest.SendRecv
+[       OK ] RcclCollectiveApiTest.SendRecv (39 ms)
+[ RUN      ] RcclCollectiveApiTest.GroupStartEnd
+[       OK ] RcclCollectiveApiTest.GroupStartEnd (0 ms)
+[----------] 11 tests from RcclCollectiveApiTest (406 ms total)
+
+[----------] 2 tests from RcclMemoryApiTest
+[ RUN      ] RcclMemoryApiTest.MemAlloc
+[       OK ] RcclMemoryApiTest.MemAlloc (0 ms)
+[ RUN      ] RcclMemoryApiTest.MemAllocAndFreeMultiple
+[       OK ] RcclMemoryApiTest.MemAllocAndFreeMultiple (0 ms)
+[----------] 2 tests from RcclMemoryApiTest (0 ms total)
+
+[----------] 1 test from RcclRedOpApiTest
+[ RUN      ] RcclRedOpApiTest.CreatePreMulSumAndDestroy
+[       OK ] RcclRedOpApiTest.CreatePreMulSumAndDestroy (40 ms)
+[----------] 1 test from RcclRedOpApiTest (40 ms total)
+
+[----------] 2 tests from RcclErrorTest
+[ RUN      ] RcclErrorTest.GetErrorString
+[       OK ] RcclErrorTest.GetErrorString (0 ms)
+[ RUN      ] RcclErrorTest.GetLastError
+[       OK ] RcclErrorTest.GetLastError (40 ms)
+[----------] 2 tests from RcclErrorTest (40 ms total)
+
+[----------] 1 test from RcclMscclApiTest
+[ RUN      ] RcclMscclApiTest.MscclLifecycle
+[       OK ] RcclMscclApiTest.MscclLifecycle (40 ms)
+[----------] 1 test from RcclMscclApiTest (40 ms total)
+
+[----------] 1 test from RcclAllReduceBiasApiTest
+[ RUN      ] RcclAllReduceBiasApiTest.AllReduceWithBias
+[       OK ] RcclAllReduceBiasApiTest.AllReduceWithBias (41 ms)
+[----------] 1 test from RcclAllReduceBiasApiTest (41 ms total)
+
+[----------] 4 tests from RcclUniqueIdTest
+[ RUN      ] RcclUniqueIdTest.GetUniqueId
+[       OK ] RcclUniqueIdTest.GetUniqueId (0 ms)
+[ RUN      ] RcclUniqueIdTest.GetUniqueIdNull
+[       OK ] RcclUniqueIdTest.GetUniqueIdNull (0 ms)
+[ RUN      ] RcclUniqueIdTest.GetUniqueIdWritesOutput
+[       OK ] RcclUniqueIdTest.GetUniqueIdWritesOutput (0 ms)
+[ RUN      ] RcclUniqueIdTest.GetUniqueIdMultipleTimes
+[       OK ] RcclUniqueIdTest.GetUniqueIdMultipleTimes (0 ms)
+[----------] 4 tests from RcclUniqueIdTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 36 tests from 11 test suites ran. (4089 ms total)
+[  PASSED  ] 36 tests.
+W0818 20:31:47.839323   67212 simple_timer.cpp:55] [rocprofv3] './build/bin/rccl_api_test' ::     4.089307 sec
+W0818 20:31:47.925523   67212 generateRocpd.cpp:1055] writing SQL database for process 67212 on node 1510185099
+E0818 20:31:47.963229   67212 generateRocpd.cpp:1079] Opened result file: ./rccl_trace_output2/bw10-1/67212_results.db (UUID=00000601-d3c3-73c3-83b9-309219c19189)
+W0818 20:31:49.755782   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_string             ::     0.031368 sec
+W0818 20:31:49.755834   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_info_node          ::     0.000013 sec
+W0818 20:31:49.757263   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_info_process       ::     0.001417 sec
+W0818 20:31:49.762051   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_info_agent         ::     0.004750 sec
+W0818 20:31:49.762077   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_info_pmc           ::     0.000011 sec
+W0818 20:31:49.795204   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd kernel info        ::     0.033117 sec
+W0818 20:31:49.827357   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_region             ::     0.032121 sec
+W0818 20:31:49.827394   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_kernel_dispatch    ::     0.000005 sec
+W0818 20:31:49.827408   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_pmc_event          ::     0.000004 sec
+W0818 20:31:49.827421   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_memory_copy        ::     0.000004 sec
+W0818 20:31:49.827439   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_memory_allocate    ::     0.000011 sec
+W0818 20:31:49.888300   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_info_pmc: kfd      ::     0.060852 sec
+W0818 20:31:49.888334   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_pmc_event: kfd     ::     0.000006 sec
+W0818 20:31:49.905304   67212 simple_timer.cpp:55] SQLite3 generation :: rocpd_flush_pending      ::     0.016951 sec
+W0818 20:31:49.911910   67212 simple_timer.cpp:55] SQLite3 generation :: SQL indexing             ::     0.006578 sec
+W0818 20:31:49.930817   67212 simple_timer.cpp:55] SQLite3 generation :: total                    ::     2.005295 sec
+W0818 20:31:49.935776   67212 simple_timer.cpp:55] [rocprofv3] output generation ::     2.092126 sec
+W0818 20:31:49.935930   67212 simple_timer.cpp:55] [rocprofv3] tool finalization ::     2.092312 sec
