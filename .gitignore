@@ -2,3 +2,7 @@ build/
 rccl_trace_output/
 *.so
 *.o
+*.log
+*.db
+*.zip
+rccl_trace_output*/

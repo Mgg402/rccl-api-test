@@ -1,3 +1,70 @@
+ RCCL API Test
+│
+├── Communicator
+│   ├── RcclCommApiTest
+│   │   ├── InitRank / Destroy
+│   │   ├── Finalize
+│   │   ├── GetAsyncError
+│   │   ├── Count
+│   │   ├── CuDevice
+│   │   ├── UserRank
+│   │   ├── Abort
+│   │   ├── InitAll
+│   │   ├── InitRankConfig
+│   │   ├── Register / Deregister
+│   │   └── Split
+│   │
+│   ├── RcclCommShrinkTest
+│   │   └── Shrink
+│   │
+│   └── RcclCommWindowApiTest
+│       └── Window Register / Deregister
+│
+├── Collective
+│   └── RcclCollectiveApiTest
+│       ├── AllReduce
+│       ├── AllGather
+│       ├── Broadcast
+│       ├── Reduce
+│       ├── ReduceScatter
+│       ├── Scatter
+│       ├── Gather
+│       ├── AllToAll
+│       ├── AllToAllv
+│       ├── Send / Recv
+│       └── Group Start / End
+│
+├── Memory
+│   └── RcclMemoryApiTest
+│       ├── MemAlloc
+│       └── MemFree
+│
+├── Datatype / RedOp
+│   └── RcclRedOpApiTest
+│       └── CreatePreMulSum / Destroy
+│
+├── Error
+│   └── RcclErrorTest
+│       ├── GetErrorString
+│       └── GetLastError
+│
+├── Misc
+│   ├── RcclVersionTest
+│   │   └── GetVersion
+│   └── RcclUniqueIdTest
+│       └── GetUniqueId
+│
+├── MSCCL
+│   └── RcclMscclApiTest
+│       └── Load / Run / Unload Algo
+│
+└── Extended Collective
+    └── RcclAllReduceBiasApiTest
+        └── AllReduceWithBias
+ 
+
+ 
+ 
                     RCCL API Test
                           │
        ┌──────────────────┼──────────────────┐
